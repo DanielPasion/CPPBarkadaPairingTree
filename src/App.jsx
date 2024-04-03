@@ -1,4 +1,8 @@
-import { initialNodesUbaes, initialEdgesUbaes, initialEdgesSiniGangGang,initialNodesSiniGangGang, initialEdgesPakwans,initialNodesPakwans, initialEdgesBasaBuddies, initialNodesBasaBuddies} from './tests.js';
+import {getUbaes,
+        getBasaBuddies,
+        getPakwans,
+        getSiniGangGang,} from '../pairingsfromsheets.js';
+
 import ELK from 'elkjs/lib/elk.bundled.js';
 import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react';
 import ReactFlow, {
@@ -9,7 +13,7 @@ import ReactFlow, {
   useEdgesState,
   useReactFlow,
 } from 'reactflow';
-import logo from './barkadalogo.jpg'
+import logo from './assets/barkadalogo.jpg'
 import './App.css'
 import 'reactflow/dist/style.css';
 
