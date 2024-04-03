@@ -1,0 +1,17 @@
+const position = { x: 0, y: 0 };
+
+/////////////////////////////////UBAES/////////////////////////////////////////////
+export const initialNodesUbaes = [];
+export const initialEdgesUbaes = [];
+
+/////////////////////////////SiniGangGang////////////////////////////////////////
+export const initialNodesSiniGangGang = [];
+export const initialEdgesSiniGangGang = [];
+
+/////////////////////////////Pakwans////////////////////////////////////////
+export const initialNodesPakwans = [];
+export const initialEdgesPakwans = [];
+
+/////////////////////////////Pakwans////////////////////////////////////////
+export const initialNodesBasaBuddies = [];
+export const initialEdgesBasaBuddies = [];
