@@ -73,9 +73,10 @@ function LayoutFlow() {
   const [initialEdgesBasaBuddies, setInitialEdgesBasaBuddies] = useState([]);
   const [allDataLoaded, setAllDataLoaded] = useState(false);
 
+  const host = "https://cppbarkadapairingtree.onrender.com/"
   useEffect(() => {
     async function fetchData() {
-      const family = await axios.get("http://localhost:3000/ubaes");
+      const family = await axios.get(host + "/ubaes");
       setInitialNodesUbaes(family.data["nodes"]);
       setInitialEdgesUbaes(family.data["edges"]);
     }
@@ -84,7 +85,7 @@ function LayoutFlow() {
 
   useEffect(() => {
     async function fetchData() {
-      const family = await axios.get("http://localhost:3000/siniganggang");
+      const family = await axios.get(host + "/siniganggang");
       setInitialNodesSiniGangGang(family.data["nodes"]);
       setInitialEdgesSiniGangGang(family.data["edges"]);
     }
@@ -93,7 +94,7 @@ function LayoutFlow() {
 
   useEffect(() => {
     async function fetchData() {
-      const family = await axios.get("http://localhost:3000/pakwans");
+      const family = await axios.get(host + "/pakwans");
       setInitialNodesPakwans(family.data["nodes"]);
       setInitialEdgesPakwans(family.data["edges"]);
     }
@@ -102,7 +103,7 @@ function LayoutFlow() {
 
   useEffect(() => {
     async function fetchData() {
-      const family = await axios.get("http://localhost:3000/basabuddies");
+      const family = await axios.get(host + "/basabuddies");
       setInitialNodesBasaBuddies(family.data["nodes"]);
       setInitialEdgesBasaBuddies(family.data["edges"]);
     }
