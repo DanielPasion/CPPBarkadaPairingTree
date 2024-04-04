@@ -8,7 +8,8 @@ app.use(cors())
 
 //Authentication
 const auth = new google.auth.GoogleAuth({
-    keyFile:'google.json',
+    //keyFile:'google.json',  //USE THIS IF RUNNING LOCALLY
+    keyFile: process.env.google,
     scopes:['https://www.googleapis.com/auth/spreadsheets']
 });
 
