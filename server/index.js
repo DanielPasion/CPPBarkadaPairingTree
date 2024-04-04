@@ -6,12 +6,14 @@ var cors = require('cors')
 
 app.use(cors())
 
-//Authentication
-const auth = new google.auth.GoogleAuth({
-    //keyFile:'google.json',  //USE THIS IF RUNNING LOCALLY
-    keyFile: process.env.google,
-    scopes:['https://www.googleapis.com/auth/spreadsheets']
-});
+//Authentication with google.json
+// const auth = new google.auth.GoogleAuth({
+//     keyFile:'google.json',
+//     scopes:['https://www.googleapis.com/auth/spreadsheets']
+// });
+
+//Authentication with API Key
+const auth = process.env.APIKEY;
 
 //Base Read Sheets Function
 async function readSheet(){
